@@ -1,141 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Product Carousel with Owl Carousel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
-    <style>
-		:root {
-			--gray-lighter: rgba(0,0,0,0.1);
-			--shadow: 0px 2px 7px var(--gray-lighter);
-			--radius: 5px
-		}
-      .staticCarousel {
-        font-family: Montserrat;
-      }
+  <meta charset="utf-8">
+  <title>Product Carousel with Owl Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --gray-lighter: rgba(0, 0, 0, 0.1);
+      --shadow: 0px 2px 7px var(--gray-lighter);
+      --radius: 5px
+    }
 
-      .staticCarousel .owl-carousel .item {
-        align-items: inherit !important;
-        margin: 4px
-      }
+    .staticCarousel {
+      font-family: Montserrat;
+    }
 
-      .staticCarousel .fixed-promo {
-        height: calc(100% - 40px);
-        box-shadow: var(--shadow);
-      }
+    .staticCarousel .owl-carousel .item {
+      align-items: inherit !important;
+      margin: 4px
+    }
 
-      .staticCarousel .fixed-promo picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra todo el espacio disponible sin deformarse */
-}
+    .staticCarousel .fixed-promo {
+      height: calc(100% - 40px);
+      box-shadow: var(--shadow);
+    }
 
-      .staticCarousel .card img {
-        padding: 20px;
-        max-width: 200px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-      }
+    .staticCarousel .fixed-promo picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Asegura que la imagen cubra todo el espacio disponible sin deformarse */
+    }
 
-      .staticCarousel .card {
-        border: none;
-        border-radius: var(--radius);
-        height: 450px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        box-shadow: var(--shadow) !important;
-      }
+    .staticCarousel .card img {
+      padding: 20px;
+      max-width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
 
-      .staticCarousel .card-img-top {
-        border-top-left-radius: var(--radius);
-        border-top-right-radius: var(--radius);
-      }
+    .staticCarousel .card {
+      border: none;
+      border-radius: var(--radius);
+      height: 450px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow) !important;
+    }
 
-      .staticCarousel .card-body {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-      }
+    .staticCarousel .card-img-top {
+      border-top-left-radius: var(--radius);
+      border-top-right-radius: var(--radius);
+    }
 
-      .staticCarousel .card-title {
-        font-size: 18px;
-        font-weight: 500;
-        width: 100%;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        color: #595959;
-		text-align: center
-      }
+    .staticCarousel .card-body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
 
-      .staticCarousel .card-text {
-        font-size: 14px;
-        font-weight: 600;
-        color: #b2b2b2;
-        text-align: center
-      }
+    .staticCarousel .card-title {
+      font-size: 18px;
+      font-weight: 500;
+      width: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: #595959;
+      text-align: center
+    }
 
-      .staticCarousel .card-price {
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: auto;
-        color: #1788d3;
-        text-align: center !important;
-      }
+    .staticCarousel .card-text {
+      font-size: 14px;
+      font-weight: 600;
+      color: #b2b2b2;
+      text-align: center
+    }
 
-      .staticCarousel .btn {
-        background-color: #1788d3 !important;
-        border-radius: var(--radius);
-        color: #fff !important;
-        font-weight: 600;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
+    .staticCarousel .card-price {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: auto;
+      color: #1788d3;
+      text-align: center !important;
+    }
 
-      .staticCarousel .btn:hover {
-        filter: brightness(calc(88 / 100));
-        color: #fff;
-      }
+    .staticCarousel .btn {
+      background-color: #1788d3 !important;
+      border-radius: var(--radius);
+      color: #fff !important;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
-      .static-owl-carousel .owl-nav .owl-prev,
-      .static-owl-carousel .owl-nav .owl-next {
-        background-color: #C49A6C;
-        border-radius: 50%;
-        margin: 0 5px;
-      }
+    .staticCarousel .btn:hover {
+      filter: brightness(calc(88 / 100));
+      color: #fff;
+    }
 
-      .static-owl-carousel .owl-next,
-      .static-owl-carousel .owl-prev {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        display: block !important;
-        height: 35px;
-        width: 35px;
-        background-color: #93d500 !important;
-        border-radius: 50% !important;
-      }
+    .static-owl-carousel .owl-nav .owl-prev,
+    .static-owl-carousel .owl-nav .owl-next {
+      background-color: #C49A6C;
+      border-radius: 50%;
+      margin: 0 5px;
+    }
 
-      .static-owl-carousel .owl-next {
-        right: -20px;
-      }
+    .static-owl-carousel .owl-next,
+    .static-owl-carousel .owl-prev {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block !important;
+      height: 35px;
+      width: 35px;
+      background-color: #93d500 !important;
+      border-radius: 50% !important;
+    }
 
-      .static-owl-carousel .owl-prev {
-        left: -20px;
-      }
+    .static-owl-carousel .owl-next {
+      right: -20px;
+    }
 
-      .static-owl-carousel .owl-nav i {
-        color: white;
-      }
-    </style>
+    .static-owl-carousel .owl-prev {
+      left: -20px;
+    }
+
+    .static-owl-carousel .owl-nav i {
+      color: white;
+    }
+  </style>
 </head>
 <body>
     <div class="landing">
