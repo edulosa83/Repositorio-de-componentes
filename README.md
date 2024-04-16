@@ -45,7 +45,10 @@
 
 > Considerar que el código incluye bootstrap, jquery y owl-carousel pero en el CMS ya están incluidas esas librerías
 
-[TOCM]
+# Tabla de Contenidos
+- [Componentes](#componentes)
+  - [Carrusel Estático](#carrusel-estático)
+  - [Landing de Componentes](#landing-de-componentes)
 
 ##Carrusel Estatico
 ----
