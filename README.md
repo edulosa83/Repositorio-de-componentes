@@ -1,15 +1,13 @@
 <a name="inicio"></a>
 
-# **Componentes**
+# Componentes
 
 > Considerar que el código incluye bootstrap, jquery y owl-carousel pero en el CMS ya están incluidas esas librerías
 
 [TOCM]
 
 ###Carrusel Estatico
-
 ----
-
 ####Código HTML
 
 ```html
