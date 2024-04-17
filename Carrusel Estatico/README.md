@@ -306,7 +306,7 @@ $(document).ready(function () {
 
 | Desk |
 | :------------: |
-| ![](https://pandao.github.io/editor.md/examples/images/8.jpg) |
+| ![]([https://pandao.github.io/editor.md/examples/images/8.jpg](https://github.com/edulosa83/Repositorio-de-componentes/blob/main/Carrusel%20Estatico/_Evidencia/carruselEstaticoDesk.jpg?raw=true)) |
 
 | Mobile |
 | :------------: |
