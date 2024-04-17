@@ -310,7 +310,7 @@ $(document).ready(function () {
 
 | Mobile |
 | :------------: |
-| ![](https://pandao.github.io/editor.md/examples/images/8.jpg) |
+| ![](https://raw.githubusercontent.com/edulosa83/Repositorio-de-componentes/main/Carrusel%20Estatico/_Evidencia/carruselEstaticoMobile.jpg?token=GHSAT0AAAAAACREDFZXEMHKMGPKWQOAPHPGZRAMBBA) |
 
 [![Top](https://img.shields.io/badge/-Volver%20al%20principio-blue?style=for-the-badge&logoColor=white)](#inicio)
 
