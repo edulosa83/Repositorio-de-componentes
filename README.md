@@ -50,9 +50,9 @@
   - [Carrusel Estático](#carrusel-estático)
   - [Landing de Componentes](#landing-de-componentes)
 
-##Carrusel Estatico
+## Carrusel Estatico
 ----
-####Código HTML
+#### Código HTML
 
 ```html
 <!DOCTYPE html>
@@ -350,7 +350,7 @@ $(document).ready(function () {
 
 ```
 
-####Imágen
+#### Imágen
 
 | Desk |
 | :------------: |
@@ -370,9 +370,9 @@ $(document).ready(function () {
 
 [========]
 
-###Carrusel Estatico
+### Carrusel Estatico
 ----
-####Código HTML
+#### Código HTML
 
 ```html
 <!DOCTYPE html>
@@ -670,7 +670,7 @@ $(document).ready(function () {
 
 ```
 
-####Imágen
+#### Imágen
 
 | Desk |
 | :------------: |
@@ -690,7 +690,7 @@ $(document).ready(function () {
 
 [========]
 
-#Landing de componentes
+# Landing de componentes
 
 [QA example](https://qas.ecommspf.com.mx/branding-jun22)
 
