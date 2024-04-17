@@ -8,7 +8,7 @@
 - [Componentes](#componentes)
   - [Carrusel Estático](#carrusel-estático)
   - [Carrusel con filtros](#carrusel-con-filtros)
-  - [Landing de Componentes](#landing-de-componentes)
+- [Landing de Componentes](#landing-de-componentes)
 
 ## Carrusel Estatico
 
