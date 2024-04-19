@@ -2,231 +2,12 @@
 
 ## Carrusel Estatico
 
-> Considerar que el código incluye bootstrap, jquery y owl-carousel pero en el CMS ya están incluidas esas librerías
+> Considerar que el código necesita Bootstrap, jQuery y owl-carousel pero en el CMS ya están incluidas esas librerías
 
-#### Código HTML
+#### Código JavaScript
 
 ```html
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Product Carousel with Owl Carousel</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
-  <style>
-    :root {
-      --gray-lighter: rgba(0, 0, 0, 0.1);
-      --shadow: 0px 2px 7px var(--gray-lighter);
-      --radius: 5px
-    }
-
-    .staticCarousel {
-      font-family: Montserrat;
-    }
-
-    .staticCarousel .owl-carousel .item {
-      align-items: inherit !important;
-      margin: 4px
-    }
-
-    .staticCarousel .fixed-promo {
-      height: calc(100% - 40px);
-      box-shadow: var(--shadow);
-    }
-
-    .staticCarousel .fixed-promo picture img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      /* Asegura que la imagen cubra todo el espacio disponible sin deformarse */
-    }
-
-    .staticCarousel .card img {
-      padding: 20px;
-      max-width: 200px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .staticCarousel .card {
-      border: none;
-      border-radius: var(--radius);
-      height: 450px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      box-shadow: var(--shadow) !important;
-    }
-
-    .staticCarousel .card-img-top {
-      border-top-left-radius: var(--radius);
-      border-top-right-radius: var(--radius);
-    }
-
-    .staticCarousel .card-body {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    .staticCarousel .card-title {
-      font-size: 18px;
-      font-weight: 500;
-      width: 100%;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      color: #595959;
-      text-align: center
-    }
-
-    .staticCarousel .card-text {
-      font-size: 14px;
-      font-weight: 600;
-      color: #b2b2b2;
-      text-align: center
-    }
-
-    .staticCarousel .card-price {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: auto;
-      color: #1788d3;
-      text-align: center !important;
-    }
-
-    .staticCarousel .btn {
-      background-color: #1788d3 !important;
-      border-radius: var(--radius);
-      color: #fff !important;
-      font-weight: 600;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .staticCarousel .btn:hover {
-      filter: brightness(calc(88 / 100));
-      color: #fff;
-    }
-
-    .static-owl-carousel .owl-nav .owl-prev,
-    .static-owl-carousel .owl-nav .owl-next {
-      background-color: #C49A6C;
-      border-radius: 50%;
-      margin: 0 5px;
-    }
-
-    .static-owl-carousel .owl-next,
-    .static-owl-carousel .owl-prev {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      display: block !important;
-      height: 35px;
-      width: 35px;
-      background-color: #93d500 !important;
-      border-radius: 50% !important;
-    }
-
-    .static-owl-carousel .owl-next {
-      right: -20px;
-    }
-
-    .static-owl-carousel .owl-prev {
-      left: -20px;
-    }
-
-    .static-owl-carousel .owl-nav i {
-      color: white;
-    }
-  </style>
-</head>
-<body>
-    <div class="landing">
-        <section>
-            <div class="container mt-4 staticCarousel">
-          <div class="row">
-            <div class="col-0 col-sm-5 col-md-4 col-lg-3">
-              <div class="fixed-promo">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="https://placehold.co/496x836?text=Promo+Image&font=open+sans" />
-                  <img src="https://placehold.co/556x370?text=Promo+Image&font=open+sans" title="Banner" id="bannerEstatico" />
-                </picture>
-              </div>
-            </div>
-            <div class="col-12 col-sm-7 col-md-8 col-lg-9">
-              <div class="owl-carousel owl-theme static-owl-carousel" id="fixed-carousel">
-                <div class="item">
-                  <div class="card">
-                    <img class="card-img-top" src="https://placehold.co/275x275?text=Product+1&font=open+sans" alt="Product 1">
-                    <div class="card-body">
-                      <h5 class="card-title">Título</h5>
-                      <p class="card-text">Descripción</p>
-                      <p class="card-price">$ Precio</p>
-                      <a href="#" class="btn">Ver más</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="card">
-                    <img class="card-img-top" src="https://placehold.co/275x275?text=Product+2&font=open+sans" alt="Product 2">
-                    <div class="card-body">
-                      <h5 class="card-title">Título</h5>
-                      <p class="card-text">Descripción</p>
-                      <p class="card-price">$ Precio</p>
-                      <a href="#" class="btn">Ver más</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="card">
-                    <img class="card-img-top" src="https://placehold.co/275x275?text=Product+3&font=open+sans" alt="Product 3">
-                    <div class="card-body">
-                      <h5 class="card-title">Título</h5>
-                      <p class="card-text">Descripción</p>
-                      <p class="card-price">$ Precio</p>
-                      <a href="#" class="btn">Ver más</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="card">
-                    <img class="card-img-top" src="https://placehold.co/275x275?text=Product+4&font=open+sans" alt="Product 4">
-                    <div class="card-body">
-                      <h5 class="card-title">Título</h5>
-                      <p class="card-text">Descripción</p>
-                      <p class="card-price">$ Precio</p>
-                      <a href="#" class="btn">Ver más</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="card">
-                    <img class="card-img-top" src="https://placehold.co/275x275?text=Product+5&font=open+sans" alt="Product 5">
-                    <div class="card-body">
-                      <h5 class="card-title">Título</h5>
-                      <p class="card-text">Descripción</p>
-                      <p class="card-price">$ Precio</p>
-                      <a href="#" class="btn">Ver más</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </section>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
+<script>
 $(document).ready(function () {
     // Función para ajustar la altura de las cards
     function adjustCardHeights() {
@@ -295,10 +76,224 @@ $(document).ready(function () {
     adjustCardHeights();
     $(window).resize(adjustCardHeights);
 });
-
 </script>
-</body>
-</html>
+
+```
+#### CSS
+
+```html
+<style>
+  .staticCarousel {
+    font-family: Montserrat;
+  }
+
+  .staticCarousel .owl-carousel .item {
+    align-items: inherit !important;
+    margin: 4px
+  }
+
+  .staticCarousel .fixed-promo {
+    display: grid;
+    height: calc(100% - 15px);
+    box-shadow: var(--shadow);
+  }
+
+  .staticCarousel .fixed-promo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .staticCarousel .card img {
+    padding: 20px;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .staticCarousel .card {
+    border: none;
+    border-radius: var(--radius);
+    height: 450px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow) !important;
+  }
+
+  .staticCarousel .card-img-top {
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+  }
+
+  .staticCarousel .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .staticCarousel .card-title {
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #595959;
+  }
+
+  .staticCarousel .card-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #b2b2b2;
+    text-align: center
+  }
+
+  .staticCarousel .card-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: auto;
+    color: #1788d3;
+    text-align: center !important;
+  }
+
+  .staticCarousel .btn {
+    background-color: #1788d3 !important;
+    border-radius: var(--radius);
+    color: #fff !important;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .staticCarousel .btn:hover {
+    filter: brightness(calc(88 / 100));
+    color: #fff;
+  }
+
+  .static-owl-carousel .owl-nav .owl-prev,
+  .static-owl-carousel .owl-nav .owl-next {
+    background-color: #C49A6C;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+
+  .static-owl-carousel .owl-next,
+  .static-owl-carousel .owl-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block !important;
+    height: 35px;
+    width: 35px;
+    background-color: #93d500 !important;
+    border-radius: 50% !important;
+  }
+
+  .static-owl-carousel .owl-next {
+    right: -20px;
+  }
+
+  .static-owl-carousel .owl-prev {
+    left: -20px;
+  }
+
+  .static-owl-carousel .owl-nav i {
+    color: white;
+  }
+</style>
+
+```
+#### Código HTML
+
+```html
+<div class="landing">
+  <section>
+    <div class="wrapper row">
+      <div class="col-12">
+        <div>
+          <h2>Carrusel Card Statico</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4 staticCarousel">
+      <div class="row">
+        <div class="col-0 col-sm-5 col-md-4 col-lg-3">
+          <div class="fixed-promo">
+            <picture>
+              <source media="(min-width: 768px)" srcset="https://assets1.farmaciasanpablo.com.mx/documentos/_Desarrollo%20de%20Componentes/staticCarosuel-branding-clicsBienestar-desk@2x.jpg" />
+			  <img src="https://assets1.farmaciasanpablo.com.mx/documentos/_Desarrollo%20de%20Componentes/staticCarosuel-branding-clicsBienestar-mobile@2x.jpg" title="Ofertas San Pablo Farmacia" id="slider-home-bau-banner02" />
+              <!--<img src="https://placehold.co/600x400?text=Promo+Image&font=open+sans" alt="Ofertas San Pablo Farmacia" title="Ofertas San Pablo Farmacia" id="slider-home-bau-banner02" />-->
+            </picture>
+          </div>
+        </div>
+        <div class="col-12 col-sm-7 col-md-8 col-lg-9">
+          <div class="owl-carousel owl-theme static-owl-carousel" id="fixed-carousel">
+            <div class="item">
+              <div class="card">
+                <img class="card-img-top" src="https://hfprod.farmaciasanpablo.com.mx/sys-master-azureproductimages/h5b/h38/9457210654750/Fsp275Wx275H_Fsp800Wx800H_70002248_1foms4itp" alt="Placeholder image of EKOS Néctar para manos maracuyá">
+                <div class="card-body">
+                  <h5 class="card-title">One Touch Select Plus Flex Glucómetro + Lancetador + Tiras Reactivas</h5>
+                  <p class="card-text">3 Piezas Paquete</p>
+                  <p class="card-price">$371.00 MXN</p>
+                  <a href="https://www.farmaciasanpablo.com.mx/equipo-y-botiquin/aparatos-de-medicion/glucometros/one-touch-select-plus-flex-glucometro-%2B-lancetador-%2B-tiras-reactivas/p/000000000070002248" class="btn">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img class="card-img-top" src="https://hfprod.farmaciasanpablo.com.mx/sys-master-azureproductimages/h1a/hfd/9123257155614/Fsp480Wx480H_Fsp800Wx800H_70000594_1fnc524qs" alt="Placeholder image of EKOS Néctar para manos maracuyá">
+                <div class="card-body">
+                  <h5 class="card-title">La Roche Posay Effaclar Suero Facial Anti-Imperfecciones</h5>
+                  <p class="card-text">30 ML Líquido Frasco Gotero</p>
+                  <p class="card-price">$667.00 MXN</p>
+                  <a href="https://www.farmaciasanpablo.com.mx/dermocosmeticos/facial/piel-grasa-facial/la-roche-posay-effaclar-suero-facial-anti-imperfecciones/p/000000000070000594" class="btn">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img class="card-img-top" src="https://hfprod.farmaciasanpablo.com.mx/sys-master-azureproductimages/h99/h00/9126913736734/Fsp480Wx480H_Fsp800Wx800H_44930002_1fnc524qs" alt="Placeholder image">
+                <div class="card-body">
+                  <h5 class="card-title">Redoxon AOX Sabor Naranja</h5>
+                  <p class="card-text">10 Tableta Tubo Ácido ascórbico 1000 MG</p>
+                  <p class="card-price">$133.50 MXN</p>
+                  <a href="https://www.farmaciasanpablo.com.mx/vitaminas-y-suplementos/vitaminicos/prevencion-de-resfriado/redoxon-aox-sabor-naranja/p/000000000044930002" class="btn">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img class="card-img-top" src="https://hfprod.farmaciasanpablo.com.mx/sys-master-azureproductimages/hbf/h79/10466467938334/Fsp480Wx480H_Fsp800Wx800H_9150735_1g0durkqi" alt="Placeholder image">
+                <div class="card-body">
+                  <h5 class="card-title">La Roche Posay Effaclar Gel de Limpieza Facial Para Piel Grasa</h5>
+                  <p class="card-text">400 ML Gel Envase</p>
+                  <p class="card-price">$543.50 MXN</p>
+                  <a href="https://www.farmaciasanpablo.com.mx/dermocosmeticos/facial/piel-grasa-facial/la-roche-posay-effaclar-gel-de-limpieza-facial-para-piel-grasa/p/000000000009150735" class="btn">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img class="card-img-top" src="https://placehold.co/300x300?text=Product+1&amp;font=open+sans" alt="Placeholder image">
+                <div class="card-body">
+                  <h5 class="card-title">Redoxon AOX Sabor Naranja</h5>
+                  <p class="card-text">10 Tableta Tubo Ácido ascórbico 1000 MG</p>
+                  <p class="card-price">$133.50 MXN</p>
+                  <a href="https://www.farmaciasanpablo.com.mx/vitaminas-y-suplementos/vitaminicos/prevencion-de-resfriado/redoxon-aox-sabor-naranja/p/000000000044930002" class="btn">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
 ```
 
@@ -319,4 +314,3 @@ $(document).ready(function () {
 # Landing de componentes
 
 [QA example](https://qas.ecommspf.com.mx/branding-jun22)
-
