@@ -5,8 +5,9 @@
 
 # Tabla de Contenidos
 - [Componentes](#componentes)
-  - [Carrusel Estático](#carrusel-estático)
-  - [Carrusel con filtros](#carrusel-con-filtros)
+ - [Carruseles](https://github.com/edulosa83/Repositorio-de-componentes/tree/main/Carrusel%20Estatico)
+  	- [Carrusel Estático](https://github.com/edulosa83/Repositorio-de-componentes/tree/main/Carrusel%20Estatico)
+  	- [Carrusel con filtros](#carrusel-con-filtros)
 - [Landing de Componentes](#landing-de-componentes)
 
 | Desk |
