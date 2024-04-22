@@ -25,5 +25,6 @@
 
 # Landing de componentes
 
-[QA example](https://qas.ecommspf.com.mx/branding-jun22){:target="_blank"}
+<a href="https://qas.ecommspf.com.mx/branding-jun22" target="_blank">QA example</a>
+
 
