@@ -4,11 +4,12 @@
 
 
 # Tabla de Contenidos
-- [Componentes](#componentes)
- - [Carruseles](https://github.com/edulosa83/Repositorio-de-componentes/tree/main/Carruseles)
-  	- [Carrusel Estático](https://github.com/edulosa83/Repositorio-de-componentes/tree/main/Carruseles/Carrusel%20Estatico)
-  	- [Carrusel con filtros](#carrusel-con-filtros)
-- [Landing de Componentes](#landing-de-componentes)
+
+ - [Componentes](#componentes)
+	 - [Carruseles](https://github.com/edulosa83/Repositorio-de-componentes/tree/main/Carruseles)
+		 - [Carrusel Estático](https://github.com/edulosa83/Repositorio-de-componentes/tree/main/Carruseles/Carrusel%20Estatico)
+		 - [Carrusel con filtros](#carrusel-con-filtros)
+ - [Landing de Componentes](#landing-de-componentes)
 
 | Desk |
 | :------------: |
