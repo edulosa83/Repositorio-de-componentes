@@ -26,5 +26,3 @@
 # Landing de componentes
 
 <a href="https://qas.ecommspf.com.mx/branding-jun22" target="_blank">QA example</a>
-
-
