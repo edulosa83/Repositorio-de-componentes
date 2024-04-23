@@ -7,8 +7,8 @@
 
  - [Componentes](#componentes)
 	 - [Carruseles](https://github.com/edulosa83/Repositorio-de-componentes/tree/main/Carruseles)
-		 - [Carrusel Estático](https://github.com/edulosa83/Repositorio-de-componentes/tree/main/Carruseles/Carrusel%20Estatico)
-		 - [Carrusel con filtros](#carrusel-con-filtros)
+		 - [Carrusel con card estático](https://github.com/edulosa83/Repositorio-de-componentes/tree/main/Carruseles/Carrusel%20con%20card%20estatico)
+		 - [Carrusel con filtro categoría](https://github.com/edulosa83/Repositorio-de-componentes/tree/main/Carruseles/Carrusel%20con%20filtro%20categor%C3%ADa)
  - [Landing de Componentes](#landing-de-componentes)
 
 | Desk |
