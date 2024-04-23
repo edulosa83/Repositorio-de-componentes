@@ -25,4 +25,4 @@
 
 # Landing de componentes
 
-[QA example](https://qas.ecommspf.com.mx/branding-jun22:target="_blank")
+[QA example](https://qas.ecommspf.com.mx/branding-jun22)
