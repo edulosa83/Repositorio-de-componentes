@@ -1,6 +1,6 @@
 <a name="inicio"></a>
 
-## Carrusel Estatico
+## Carrusel con card estático
 
 > Considerar que el código necesita Bootstrap, jQuery y owl-carousel pero en el CMS ya están incluidas esas librerías
 
