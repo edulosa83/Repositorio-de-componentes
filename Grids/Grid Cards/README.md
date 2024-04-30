@@ -2,7 +2,7 @@
 
 ## Grid Cards
 
-> Considerar que el código necesita Bootstrap pero en el CMS ya están incluidas esas librerías
+> Considerar que el código necesita Bootstrap pero en el CMS ya está incluida esa librería
 
 
 #### CSS
