@@ -4,8 +4,6 @@
 
 > Considerar que el código necesita Bootstrap pero en el CMS ya están incluidas esas librerías
 
-#### Código JavaScript
-
 
 #### CSS
 
